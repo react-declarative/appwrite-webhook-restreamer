@@ -15,7 +15,7 @@
 npx -y appwrite-webhook-restreamer
 ```
 
-or
+  or
 
 ```bash
 npm install -g appwrite-webhook-restreamer
