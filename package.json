@@ -1,0 +1,37 @@
+{
+    "name": "appwrite-webhook-restreamer",
+    "version": "1.0.0",
+    "description": "The Appwrite event restreamer",
+    "main": "index.mjs",
+    "bin": "index.mjs",
+    "scripts": {
+        "start": "node index.mjs",
+        "test": "node --inspect-brk index.mjs"
+    },
+    "keywords": [
+        "appwrite",
+        "realtime",
+        "sockjs",
+        "restream",
+        "webhook"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Petr Tripolsky",
+        "email": "tripolskypetr@gmail.com",
+        "url": "https://github.com/tripolskypetr"
+    },
+    "funding": {
+        "type": "individual",
+        "url": "http://paypal.me/tripolskypetr"
+    },
+    "homepage": "https://github.com/react-declarative/appwrite-webhook-restreamer",
+    "repository": "https://github.com/react-declarative/appwrite-webhook-restreamer",
+    "dependencies": {
+        "body-parser": "1.20.2",
+        "express": "4.19.2",
+        "http-proxy-middleware": "2.0.6",
+        "serialize-error": "11.0.3",
+        "sockjs": "0.3.24"
+    }
+}
