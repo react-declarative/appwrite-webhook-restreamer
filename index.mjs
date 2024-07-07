@@ -14,6 +14,8 @@ import sockjs from "sockjs";
 
 const [port = "9999"] = process.argv.slice(2);
 
+const hasDisallowWsFlag = process.argv.includes("--disallowWs");
+
 const app = express();
 
 app.use((req, res, next) => {
@@ -95,4 +97,4 @@ const server = http
       console.log(`Restream started: PORT=${port}`);
     });
 
-sockjsServer.installHandlers(server, { prefix: '/listen', websocket: false });
+sockjsServer.installHandlers(server, { prefix: '/listen', websocket: !hasDisallowWsFlag });
