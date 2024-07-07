@@ -15,6 +15,13 @@
 npx -y appwrite-webhook-restreamer
 ```
 
+or
+
+```bash
+npm install -g appwrite-webhook-restreamer
+appwrite-webhook-restreamer
+```
+
 2. Setup [webhook](https://appwrite.io/docs/advanced/platform/webhooks) in the Appwrite instance settings. Use the next POST URL: `http://127.0.0.1:9999/emit`
 
 ![appwrite-webhook-settings](./assets/appwrite-webhook-settings.png)
