@@ -1,6 +1,6 @@
 {
     "name": "appwrite-webhook-restreamer",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "The Appwrite event restreamer",
     "main": "index.mjs",
     "bin": "index.mjs",

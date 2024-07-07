@@ -67,8 +67,9 @@ const emitter = new EventEmitter();
     });
   });
   emitter.on('event', (data) => {
+    const chunk = JSON.stringify(data);
     clients.forEach((client) => {
-      client.write(JSON.stringify(data));
+      client.write(chunk);
     });
   });
 }
