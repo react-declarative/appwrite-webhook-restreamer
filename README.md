@@ -65,7 +65,7 @@ export class RealtimeService {
 
 # CLI
 
-The first command line argument is always a port. The second is the `disallowWs` flag is optional
+The first command line argument is always a port. The second is the `disallowWs` flag (optional)
 
 ```bash
 appwrite-webhook-restream 9999 [--disallowWs]
