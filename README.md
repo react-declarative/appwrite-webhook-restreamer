@@ -39,10 +39,6 @@ export class RealtimeService {
 
   private readonly _sockjsSubject = new Subject<object>();
 
-  constructor() {
-    makeObservable(this, {});
-  }
-
   private _init = singleshot(() => {
     new Socket("http://127.0.0.1:9999/listen").onmessage = (msg) => {
       const chunk = JSON.parse(msg.data);
