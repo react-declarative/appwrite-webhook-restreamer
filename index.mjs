@@ -68,7 +68,6 @@ const emitter = new EventEmitter();
   });
   emitter.on('event', (data) => {
     clients.forEach((client) => {
-      restreamLogger.info(data);
       client.write(JSON.stringify(data));
     });
   });
